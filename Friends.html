@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Friends</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+</head>
+<style>
+    body {
+        background-image: url("https://data.whicdn.com/images/287960547/original.gif");
+        background-size: 100%;
+        background-position: top;
+    }
+
+    .text {
+        font-family: 'Satisfy', cursive;
+        text-align: center;
+        font-size: 40px;
+        color: pink;
+        animation-name: colorchange;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes colorchange {
+        0% {
+            color: Blue;
+        }
+
+        10% {
+            color: orange;
+        }
+
+        20% {
+            color: cyan;
+        }
+
+        30% {
+            color: red;
+        }
+
+        40% {
+            color: green;
+        }
+
+        50% {
+            color: pink;
+        }
+
+        60% {
+            color: bisque;
+        }
+
+        70% {
+            color: purple;
+        }
+
+        80% {
+            color: brown;
+        }
+
+        90% {
+            color: wheat;
+        }
+    }
+
+    #date {
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        font-family: 'Satisfy', cursive;
+    }
+
+    h5 {
+        font-family: 'Satisfy', cursive;
+        text-align: center;
+        font-size: 25px;
+        color: aqua;
+    }
+</style>
+
+<body>
+    <p class="text">Happy</p>
+    <p class="text">Friendship</p>
+    <p class="text">Day</p>
+    <p class="text" id="name"></p>
+    <p id="date"></p>
+    <h5>From : Rituraj Gupta</h5>
+</body>
+<script>
+    var name = prompt("Your name", "My Dear Friend");
+    document.getElementById("name").innerHTML = name;
+
+    function time() {
+        var time = document.getElementById("date");
+        var today = new Date();
+        time.innerHTML = today;
+    }
+    setInterval(time, 1000);
+</script>
+
+</html>
