@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Frequency</title>
+    <style>
+        body{
+            background: url(image.jpg);
+        }
+        textarea{
+            color: rgb(255, 8, 8);
+            line-height: 2rem;
+            margin-bottom: 3rem;
+            border-radius: 4px;
+            font-size: large;
+            font-style: oblique;
+            font-weight: 700;
+            width: 100%;
+            background: transparent;
+        }
+        input{
+            min-width: 20rem;
+            font-weight: 700;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-right: 1;
+            min-height: .5rem;
+            color: rgba(166, 233, 10, 0.993);
+            background: transparent;
+        }
+        button{
+            background: transparent;
+            font-weight: 700;
+            padding: 1rem;
+            min-height: .5rem;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: .1rem;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" onmouseover="play()">
+    <audio id="audio" src="song.mp3" loop="loop"></audio>
+    <div class="containe">
+        <textarea name="textarea" id="text" cols="50" rows="5"></textarea>
+        <input type="text" id="input" placeholder="Write the word">
+        <button id="button">Check</button>
+        <h3 id="res"></h3>
+    </div>
+    <script src="WordFrequency.js"></script>
+</body>
+</html>
